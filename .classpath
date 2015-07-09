@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/courseraprogfun/src/main/java"/>
+	<classpathentry kind="src" path="/courseraprogfun/src/main/scala"/>
+	<classpathentry kind="src" path="/courseraprogfun/src/main/scala-2.11"/>
+	<classpathentry kind="src" path="/courseraprogfun/target/scala-2.11/src_managed/main"/>
+	<classpathentry kind="src" path="/courseraprogfun/src/test/java"/>
+	<classpathentry kind="src" path="/courseraprogfun/src/test/scala"/>
+	<classpathentry kind="src" path="/courseraprogfun/src/test/scala-2.11"/>
+	<classpathentry kind="src" path="/courseraprogfun/target/scala-2.11/src_managed/test"/>
+	<classpathentry kind="src" path="/courseraprogfun/src/main/resources"/>
+	<classpathentry kind="src" path="/courseraprogfun/target/scala-2.11/resource_managed/main"/>
+	<classpathentry kind="src" path="/courseraprogfun/src/test/resources"/>
+	<classpathentry kind="src" path="/courseraprogfun/target/scala-2.11/resource_managed/test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SBT: org.scala-lang:scala-library:2.11.6:jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
