@@ -22,8 +22,31 @@ object practise {
   list()
   list(1)
   list(1,2)
+
+  /**
+   * Pattern matching based evaluation
+   * of expression
+   * @param e, expression
+   * @return result
+   */
+  def eval(e:Expr):Int = e match {
+    case Number(x) => x
+    case Sum(e1, e2) => eval(e1) + eval(e2)
+  }
+  //Test
+  eval(Number(2))
+  eval(Sum(Number(5),Number(9)))
+
+  /**
+   * Show the contents of expression
+   * @param e, expression
+   * @return contents of expression
+   */
   def show(e:Expr):String = e match {
     case Number(x) => x.toString
     case Sum(l, r) => show(l) + "+" + show(r)
   }
+  //Test
+  show(Sum(Number(5),Number(9)))
+
 }
