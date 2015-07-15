@@ -22,4 +22,8 @@ object practise {
   list()
   list(1)
   list(1,2)
+  def show(e:Expr):String = e match {
+    case Number(x) => x.toString
+    case Sum(l, r) => show(l) + "+" + show(r)
+  }
 }

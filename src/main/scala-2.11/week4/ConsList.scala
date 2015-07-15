@@ -2,12 +2,17 @@ package week4
 
 /**
  * ConsList
- * @tparam T, generic type T
+ * @tparam T, generic type T(+T) means its covariant type
+ *          i.e. the subtype can replace base type
  */
 trait ConsList[T] {
   def isEmpty: Boolean
   def head: T
   def tail: ConsList[T]
+  // violates variance checking i.e. a covariant type can only be a return type, while contravariant
+  // types can appear in the position of parameter type
+  // def prepend(elem: T): ConsList[T]
+  // def prepend[U >: T](elem: U): List[U] = new Cons(elem, this), this will work if ConsList[+T]
 }
 
 /**
@@ -22,7 +27,6 @@ class Cons[T](val head: T, val tail: ConsList[T]) extends ConsList[T] {
 
 /**
  * Nil cell
- * @tparam T, generic type T
  */
 class Nil[T] extends ConsList[T] {
   def isEmpty: Boolean = true
@@ -36,7 +40,7 @@ class Nil[T] extends ConsList[T] {
  */
 object list {
 
-  def apply[T]:ConsList[T] =  new Nil[T]
+  def apply[T]:ConsList[T] = new Nil[T]
 
   def apply[T](x:T):ConsList[T] =  new Cons[T](x, new Nil[T])
 
