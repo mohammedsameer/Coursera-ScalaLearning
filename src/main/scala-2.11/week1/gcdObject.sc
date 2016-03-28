@@ -14,7 +14,7 @@ object gcdObject {
     }
   }
 
-  //Test
+// Test
 //  gcd(7,21)
 //  gcd(12, 42)
   gcd(2, 4)

@@ -10,6 +10,7 @@ object sqrtObject {
   *   c) Use mean as new y
   * */
   def sqrt(x: Double): Double = {
+
     def abs(res:Double): Double = {
       if (res < 0) -res else res
     }
@@ -23,7 +24,7 @@ object sqrtObject {
       //Reason: if the remainder is less than
       abs(y * y-x)/x < 0.001
     }
-    //Improved the guess
+    //Improve the guess
     def improve(y: Double): Double = {
       (y + x / y) / 2
     }

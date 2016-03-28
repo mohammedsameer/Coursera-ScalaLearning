@@ -10,6 +10,8 @@ object practise {
   //Type test
   val x = null
   val s:String = x
+  val v1 = 2*2
+  def v2 = 2*2
   //No value type assignment for null
   //val i:Int = x
 }

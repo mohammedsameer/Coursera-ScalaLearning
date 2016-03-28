@@ -27,7 +27,6 @@ object factorialObject {
     }
     loop(1,x)
   }
-
   //Test
   factorialTail(3)
   factorialTail(4)
